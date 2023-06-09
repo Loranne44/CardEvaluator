@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45488B4E2A32007600BE4F3A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45488B4D2A32007600BE4F3A /* AccountViewController.swift */; };
+		45488B502A3201DF00BE4F3A /* SMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */; };
 		4583D0D62A2F507800046472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D52A2F507800046472 /* AppDelegate.swift */; };
 		4583D0D82A2F507800046472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D72A2F507800046472 /* SceneDelegate.swift */; };
-		4583D0DA2A2F507800046472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D92A2F507800046472 /* ViewController.swift */; };
+		4583D0DA2A2F507800046472 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D92A2F507800046472 /* PhoneViewController.swift */; };
 		4583D0DD2A2F507800046472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0DB2A2F507800046472 /* Main.storyboard */; };
 		4583D0DF2A2F507800046472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0DE2A2F507800046472 /* Assets.xcassets */; };
 		4583D0E22A2F507800046472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0E02A2F507800046472 /* LaunchScreen.storyboard */; };
 		4583D0ED2A2F507900046472 /* ResellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0EC2A2F507900046472 /* ResellTests.swift */; };
 		4583D0F72A2F507900046472 /* ResellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0F62A2F507900046472 /* ResellUITests.swift */; };
 		4583D0F92A2F507900046472 /* ResellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0F82A2F507900046472 /* ResellUITestsLaunchTests.swift */; };
+		4583D1072A2F542A00046472 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4583D1062A2F542A00046472 /* Alamofire */; };
+		4583D1092A2F54E000046472 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D1082A2F54E000046472 /* AuthManager.swift */; };
+		4583D10C2A2F721600046472 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4583D10B2A2F721600046472 /* FirebaseAuth */; };
+		4583D10E2A2F72D900046472 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4583D10D2A2F72D900046472 /* GoogleService-Info.plist */; };
+		4583D10F2A2F72D900046472 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4583D10D2A2F72D900046472 /* GoogleService-Info.plist */; };
+		4583D1102A2F72D900046472 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4583D10D2A2F72D900046472 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45488B4D2A32007600BE4F3A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeViewController.swift; sourceTree = "<group>"; };
 		4583D0D22A2F507800046472 /* Resell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4583D0D52A2F507800046472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4583D0D72A2F507800046472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4583D0D92A2F507800046472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4583D0D92A2F507800046472 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		4583D0DC2A2F507800046472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4583D0DE2A2F507800046472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4583D0E12A2F507800046472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		4583D0F22A2F507900046472 /* ResellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4583D0F62A2F507900046472 /* ResellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResellUITests.swift; sourceTree = "<group>"; };
 		4583D0F82A2F507900046472 /* ResellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4583D1082A2F54E000046472 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		4583D10D2A2F72D900046472 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4583D1072A2F542A00046472 /* Alamofire in Frameworks */,
+				4583D10C2A2F721600046472 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45488B4C2A32006200BE4F3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4583D0D92A2F507800046472 /* PhoneViewController.swift */,
+				45488B4D2A32007600BE4F3A /* AccountViewController.swift */,
+				45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		4583D0C92A2F507800046472 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +123,15 @@
 		4583D0D42A2F507800046472 /* Resell */ = {
 			isa = PBXGroup;
 			children = (
+				45488B4C2A32006200BE4F3A /* Controller */,
 				4583D0D52A2F507800046472 /* AppDelegate.swift */,
 				4583D0D72A2F507800046472 /* SceneDelegate.swift */,
-				4583D0D92A2F507800046472 /* ViewController.swift */,
 				4583D0DB2A2F507800046472 /* Main.storyboard */,
 				4583D0DE2A2F507800046472 /* Assets.xcassets */,
+				4583D10D2A2F72D900046472 /* GoogleService-Info.plist */,
 				4583D0E02A2F507800046472 /* LaunchScreen.storyboard */,
 				4583D0E32A2F507800046472 /* Info.plist */,
+				4583D1082A2F54E000046472 /* AuthManager.swift */,
 			);
 			path = Resell;
 			sourceTree = "<group>";
@@ -143,6 +169,10 @@
 			dependencies = (
 			);
 			name = Resell;
+			packageProductDependencies = (
+				4583D1062A2F542A00046472 /* Alamofire */,
+				4583D10B2A2F721600046472 /* FirebaseAuth */,
+			);
 			productName = Resell;
 			productReference = 4583D0D22A2F507800046472 /* Resell.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +245,10 @@
 				Base,
 			);
 			mainGroup = 4583D0C92A2F507800046472;
+			packageReferences = (
+				4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4583D10A2A2F721500046472 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4583D0D32A2F507800046472 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4583D0E22A2F507800046472 /* LaunchScreen.storyboard in Resources */,
+				4583D10E2A2F72D900046472 /* GoogleService-Info.plist in Resources */,
 				4583D0DF2A2F507800046472 /* Assets.xcassets in Resources */,
 				4583D0DD2A2F507800046472 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4583D10F2A2F72D900046472 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4583D1102A2F72D900046472 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4583D0DA2A2F507800046472 /* ViewController.swift in Sources */,
+				4583D0DA2A2F507800046472 /* PhoneViewController.swift in Sources */,
+				45488B4E2A32007600BE4F3A /* AccountViewController.swift in Sources */,
+				4583D1092A2F54E000046472 /* AuthManager.swift in Sources */,
 				4583D0D62A2F507800046472 /* AppDelegate.swift in Sources */,
 				4583D0D82A2F507800046472 /* SceneDelegate.swift in Sources */,
+				45488B502A3201DF00BE4F3A /* SMSCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZBZ792969D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZBZ792969D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -596,6 +638,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4583D10A2A2F721500046472 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4583D1062A2F542A00046472 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4583D10B2A2F721600046472 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4583D10A2A2F721500046472 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4583D0CA2A2F507800046472 /* Project object */;
 }
