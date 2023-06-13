@@ -2,6 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>825139908943256</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>com.LoranneJoncheray.ResellAbandonner</string>
+    <key>FacebookClientToken</key>
+    <string>309e733f888bc1f610a207734f3a338f</string>
+    <key>FacebookDisplayName</key>
+    <string>ResellCard</string>
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-share-api</string>
+    </array>
+    
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

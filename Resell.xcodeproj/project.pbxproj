@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45488B4E2A32007600BE4F3A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45488B4D2A32007600BE4F3A /* AccountViewController.swift */; };
-		45488B502A3201DF00BE4F3A /* SMSCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */; };
+		4500ECAF2A334D9E00B3CA1B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4500ECAE2A334D9E00B3CA1B /* FacebookLogin */; };
+		4511F5A82A389042005202A3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511F5A72A389042005202A3 /* AuthViewController.swift */; };
+		4511F5AA2A38A355005202A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511F5A92A38A355005202A3 /* HomeViewController.swift */; };
+		4511F5AC2A38B029005202A3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4511F5AB2A38B029005202A3 /* HomeViewController.xib */; };
 		4583D0D62A2F507800046472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D52A2F507800046472 /* AppDelegate.swift */; };
 		4583D0D82A2F507800046472 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D72A2F507800046472 /* SceneDelegate.swift */; };
-		4583D0DA2A2F507800046472 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D0D92A2F507800046472 /* PhoneViewController.swift */; };
 		4583D0DD2A2F507800046472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0DB2A2F507800046472 /* Main.storyboard */; };
 		4583D0DF2A2F507800046472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0DE2A2F507800046472 /* Assets.xcassets */; };
 		4583D0E22A2F507800046472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4583D0E02A2F507800046472 /* LaunchScreen.storyboard */; };
@@ -44,12 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		45488B4D2A32007600BE4F3A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeViewController.swift; sourceTree = "<group>"; };
+		4500ECB02A335D0F00B3CA1B /* Resell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Resell.entitlements; sourceTree = "<group>"; };
+		4511F5A72A389042005202A3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		4511F5A92A38A355005202A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4511F5AB2A38B029005202A3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4583D0D22A2F507800046472 /* Resell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4583D0D52A2F507800046472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4583D0D72A2F507800046472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4583D0D92A2F507800046472 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		4583D0DC2A2F507800046472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4583D0DE2A2F507800046472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4583D0E12A2F507800046472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			files = (
 				4583D1072A2F542A00046472 /* Alamofire in Frameworks */,
 				4583D10C2A2F721600046472 /* FirebaseAuth in Frameworks */,
+				4500ECAF2A334D9E00B3CA1B /* FacebookLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +96,8 @@
 		45488B4C2A32006200BE4F3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4583D0D92A2F507800046472 /* PhoneViewController.swift */,
-				45488B4D2A32007600BE4F3A /* AccountViewController.swift */,
-				45488B4F2A3201DF00BE4F3A /* SMSCodeViewController.swift */,
+				4511F5A72A389042005202A3 /* AuthViewController.swift */,
+				4511F5A92A38A355005202A3 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +125,7 @@
 		4583D0D42A2F507800046472 /* Resell */ = {
 			isa = PBXGroup;
 			children = (
+				4500ECB02A335D0F00B3CA1B /* Resell.entitlements */,
 				45488B4C2A32006200BE4F3A /* Controller */,
 				4583D0D52A2F507800046472 /* AppDelegate.swift */,
 				4583D0D72A2F507800046472 /* SceneDelegate.swift */,
@@ -132,6 +135,7 @@
 				4583D0E02A2F507800046472 /* LaunchScreen.storyboard */,
 				4583D0E32A2F507800046472 /* Info.plist */,
 				4583D1082A2F54E000046472 /* AuthManager.swift */,
+				4511F5AB2A38B029005202A3 /* HomeViewController.xib */,
 			);
 			path = Resell;
 			sourceTree = "<group>";
@@ -172,6 +176,7 @@
 			packageProductDependencies = (
 				4583D1062A2F542A00046472 /* Alamofire */,
 				4583D10B2A2F721600046472 /* FirebaseAuth */,
+				4500ECAE2A334D9E00B3CA1B /* FacebookLogin */,
 			);
 			productName = Resell;
 			productReference = 4583D0D22A2F507800046472 /* Resell.app */;
@@ -248,6 +253,7 @@
 			packageReferences = (
 				4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				4583D10A2A2F721500046472 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4500ECAD2A334D9E00B3CA1B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 4583D0D32A2F507800046472 /* Products */;
 			projectDirPath = "";
@@ -267,6 +273,7 @@
 			files = (
 				4583D0E22A2F507800046472 /* LaunchScreen.storyboard in Resources */,
 				4583D10E2A2F72D900046472 /* GoogleService-Info.plist in Resources */,
+				4511F5AC2A38B029005202A3 /* HomeViewController.xib in Resources */,
 				4583D0DF2A2F507800046472 /* Assets.xcassets in Resources */,
 				4583D0DD2A2F507800046472 /* Main.storyboard in Resources */,
 			);
@@ -295,12 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4583D0DA2A2F507800046472 /* PhoneViewController.swift in Sources */,
-				45488B4E2A32007600BE4F3A /* AccountViewController.swift in Sources */,
+				4511F5AA2A38A355005202A3 /* HomeViewController.swift in Sources */,
 				4583D1092A2F54E000046472 /* AuthManager.swift in Sources */,
 				4583D0D62A2F507800046472 /* AppDelegate.swift in Sources */,
+				4511F5A82A389042005202A3 /* AuthViewController.swift in Sources */,
 				4583D0D82A2F507800046472 /* SceneDelegate.swift in Sources */,
-				45488B502A3201DF00BE4F3A /* SMSCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,9 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Resell/Resell.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZBZ792969D;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -492,6 +499,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoranneJoncheray.Resell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,9 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Resell/Resell.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZBZ792969D;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resell/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -520,6 +529,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoranneJoncheray.Resell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,6 +650,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4500ECAD2A334D9E00B3CA1B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
 		4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -659,6 +677,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4500ECAE2A334D9E00B3CA1B /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4500ECAD2A334D9E00B3CA1B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
 		4583D1062A2F542A00046472 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4583D1052A2F542A00046472 /* XCRemoteSwiftPackageReference "Alamofire" */;
